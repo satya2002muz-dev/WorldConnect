@@ -159,7 +159,7 @@ body
 {
     background: rgba(255,255,255,0.25);
 }
-.action img
+.actions img
 {
     width:35px;
 }
@@ -200,6 +200,7 @@ body
         width: 70px; height: 70px; 
     }
 }
+
 
 
 
