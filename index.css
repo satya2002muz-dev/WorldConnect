@@ -8,8 +8,42 @@
 body 
 {
     background: #0b1120;
-    color: #fff;
+    color: #faebeb;
     padding: 20px;
+}
+body.light
+{
+    background-color:white;
+    color: black;
+    .logo img
+    {
+        background-color: #0d0d0e;
+        border: 2px solid #0f0f10;
+    }
+    .nav-links a
+    {
+        color: black;
+    }
+    .student
+    {
+        background-color: #faebeb;
+        color: rgb(244, 242, 242);
+    }
+    .nav-links a:hover 
+    {
+        background-color:#0944f5;
+        border-radius: 20px;
+        color: white;
+    }
+    .search-box input
+    {
+        border:1px solid black;
+    }
+    .actions span 
+    {
+        background-color: #dbe4fc;
+    }
+
 }
 .navbar 
 {
@@ -18,8 +52,8 @@ body
    align-items: center;
    background: rgba(255,255,255,0.05);
    padding-top:15px ;
-   padding-bottom: 15px;
-   padding : 15px ;
+   padding-bottom: 10px;
+   
    padding-right: 25px;
    padding-right: 25px;
    border-radius: 16px;
@@ -46,8 +80,11 @@ body
     border-radius: 20px;
     font-weight: bold;
     transition: all 0.3s;
-    padding: 10px 20px;
-    white-space: nowrap
+
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
 }
 .student
 {
@@ -57,15 +94,36 @@ body
 {
     color: #3b82f6;
     background-color:#080c17;
-    padding: 12px;
+    
     border-radius: 20px;
     color:wheat;
 
 }
-.menu 
+
+.right
 {
-    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+}
+.menu
+{
+    margin: 15px;
+    font-size:2rem;
     cursor: pointer;
+}
+.right button 
+{
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.right button #mode
+{
+    height: 70px;
+    width: auto;  
 }
 .info-card 
 {
@@ -194,11 +252,13 @@ body
     {
         flex-direction: column;
         gap: 15px;
+        
     }
     .logo img 
     { 
         width: 70px; height: 70px; 
     }
+    
 }
 
 
